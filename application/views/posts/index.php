@@ -4,5 +4,5 @@
       <small class="post-date">Publicado em: <?php echo $post['created_at']; ?></small><br>
         <?php echo $post['body']; ?>
           <br><br>
-          <p><a class="btn btn-default" href="<?php echo base_url('/post/'.$post['slug']); ?>">Ver Mais</a></p>
+          <p><a class="btn btn-default" href="<?php echo base_url('/posts/'.$post['slug']); ?>">Ver Mais</a></p>
           <?php endforeach; ?>

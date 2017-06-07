@@ -1,9 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+$route['posts/create'] = 'posts/create'; 
 
-$route['(:any)'] = 'posts/view';//--> route para post ou seja basta chamar 
+$route['posts/(:any)'] = 'posts/view/$1';//--> acessar ao post
 
-$route['post'] = 'posts/index'; //--> route para post ou seja basta chamar blog/post = post/index
+$route['posts'] = 'posts/index'; //--> route para post ou seja basta chamar blog/post = post/index
 
 //chamar pargina pages/view e trazer o index a frente paginal de introducao -index
 $route['default_controller'] = "pages/view";
