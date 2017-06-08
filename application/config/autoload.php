@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database','form_validation'); //carregar bibliot
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url','form'); //chamar helpers
+$autoload['helper'] = array('url','form','text'); //chamar helpers
 
 
 /*

@@ -1,8 +1,16 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+ 
+
 $route['posts/create'] = 'posts/create'; 
 
-$route['posts/(:any)'] = 'posts/view/$1';//--> acessar ao post
+$route['posts/edit/(:any)'] = 'posts/edit/$1'; // editar os posts pelos slugs 
+
+$route['posts/update'] = 'posts/update'; // submeter os post pelo update
+
+$route['posts/delete/(:num)'] = 'posts/delete/$1';// apagar os posts by id pelo link do delete
+
+$route['posts/(:any)'] = 'posts/view/$1'; //--> acessar ao post
 
 $route['posts'] = 'posts/index'; //--> route para post ou seja basta chamar blog/post = post/index
 
@@ -15,6 +23,8 @@ $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
 
 $route['translate_uri_dashes'] = FALSE;
+
+
 
 
 /* End of file routes.php */
